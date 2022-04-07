@@ -1,0 +1,35 @@
+* {
+    padding: 0.15em;
+    margin: 0.15em;
+    border-width: 0.05em;
+}
+.tabla {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+.verde {
+    display: flex;
+    flex-grow: 4;
+    background-color: lightgreen;
+    border-style: solid;
+}
+.azul {
+    display: flex;
+    flex-grow: 2;
+    background-color: lightblue;
+    border-style: solid;
+}
+.t-biografia, .t-biografia td, .t-biografia th {
+    border: 1px solid;
+}
+form ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+​
+form li {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}

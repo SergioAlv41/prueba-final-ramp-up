@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS.css">
+    <title>Ejercicio prueba final ramp up</title>
+</head>
+
+<body>
+
+    <head>
+        <h1>
+            CONTACTO
+        </h1>
+        <nav>
+
+            <ul>
+
+                <li> <a href="index.html">Inicio</a></li>
+                <li>
+                    <a href="biografia.html">Biografía</a>
+                </li>
+                <li>
+                    <a href="galeria.html">Galería</a>
+                </li>
+                <li>
+                    Contacto
+                </li>
+            </ul>
+
+        </nav>
+    </head>
+    <main>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <ul>
+                    <li>
+                        <label for="nombre">Nombre*:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Luis" autofocus="autofocus"
+                            required="required" />
+                    </li>
+                    <li>
+                        <label for="apellidos">Apellidos*:</label>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Fernández González"
+                            required="required" />
+                    </li>
+                    <li>
+                        <label for="edad">Edad:</label>
+                        
+                        <input type="number" id="edad" name="edad" placeholder="18" min="0" max="150" />
+                    </li>
+                    <li>
+                        <label for="fecha">Fecha de nacimiento:</label>
+                        <input type="date" id="fecha" name="fecha" />
+                    </li>
+                    <li>
+                        Sexo:
+                        <input type="radio" id="hombre" name="sexo" value="hombre" />
+                        <label for="hombre">H</label>
+                        <input type="radio" id="mujer" name="sexo" value="mujer" />
+                        <label for="mujer">M</label>
+                    </li>
+                </ul>
+                <fieldset>
+                    <legend>Sobre ti</legend>
+                    <ul>
+                        <li>
+                            <label for="deporte">Deporte favorito:</label>
+                            <input type="text" id="deporte" name="deporte" placeholder="Input predictivo"
+                                list="lista" />
+                            <datalist id="lista">
+                                <option value="Fútbol"></option>
+                                <option value="Baloncesto"></option>
+                                <option value="Atletismo"></option>
+                                <option value="Natación"></option>
+                            </datalist>
+                        </li>
+                        <li>
+                            <label for="color">Color favorito:</label>
+                            <input type="color" id="color" name="color" value="#fff" />
+                        </li>
+                        <li>
+                            <label for="curiosidad">Cuéntanos alguna curiosidad sobre ti:</label><br />
+                            <textarea id="curiosidad" name="curiosidad" cols="40" rows="7"></textarea>
+                        </li>
+                    </ul>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+                    <ul>
+                        <li>
+                            <label for="telefono">Número de teléfono:</label>
+                            <input type="tel" id="telefono" name="telefono" />
+                        </li>
+                        <li>
+                            <label for="correo">Dirección de correo electrónico*:</label>
+                            <input type="email" id="correo" name="correo" required="required" />
+                        </li>
+                        <li>
+                            <label for="ciudad">Ciudad de nacimiento:</label>
+                            <select id="ciudad" name="ciudad">
+                                <optgroup label="España">
+                                    <option value="Ferrol">Ferrol</option>
+                                    <option value="Madrid" selected="selected">Madrid</option>
+                                    <option value="La Coruña">La Coruña</option>
+                                    <option value="Málaga">Málaga</option>
+                                </optgroup>
+                            </select>
+                        </li>
+                    </ul>
+                </fieldset>
+                <p>Los campos con (*) son obligatorios.</p>
+                <ul>
+                    <li>
+                        <input type="submit" value="Enviar formulario" />
+                        <input type="reset" value="Resetear formulario" />
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+    </main>
+</body>
